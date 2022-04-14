@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-theme-crossroads",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple church website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Austin Cox",
   "dependencies": {
     "gatsby": "^4.11.2",
     "gatsby-plugin-gatsby-cloud": "^4.11.1",
