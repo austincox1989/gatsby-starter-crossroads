@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, noIndex = false, favicon }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -69,7 +69,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      {favicon && <link rel='icon' type='image/png' href={favicon.url} sizes='16x16' />}
+      {noIndex && <meta name='robots' content='noindex' />}
+    </Helmet>
   );
 }
 

@@ -1,42 +1,31 @@
-import React from "react"
-import { graphql, PageProps, useStaticQuery } from "gatsby"
-import { SEO } from "components/seo/seo"
-import { HeroBanner } from "components/hero/HeroBanner"
-import { useLogos } from "hooks/queries/settings/useLogos"
-import { ContentBlocks } from "components/content-blocks/ContentBlocks"
-import { Layout } from "components/layout"
-import { useGeneralSettings } from "hooks/useGeneralSettings"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
+const IndexPage = () => (
+  <Layout>
+    <SEO title='Home' />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <StaticImage
+      src='../images/gatsby-astronaut.png'
+      width={300}
+      quality={95}
+      formats={['auto', 'webp', 'avif']}
+      alt='A Gatsby astronaut'
+      style={{ marginBottom: `1.45rem` }}
+    />
+    <p>
+      <Link to='/page-2/'>Go to page 2</Link> <br />
+      <Link to='/using-typescript/'>Go to "Using TypeScript"</Link> <br />
+      <Link to='/using-ssr'>Go to "Using SSR"</Link> <br />
+      <Link to='/using-dsg'>Go to "Using DSG"</Link>
+    </p>
+  </Layout>
+);
 
-
-
-
-
-
-const getHomePage = graphql`
-    query Home {
-        allKontentItemPage(filter: { elements: { slug: { value: { eq: "/" } } } }) {
-            nodes {
-                elements {
-                    seo_metadata__meta_description {
-                        value
-                    }
-                    seo_metadata__meta_title {
-                        value
-                    }
-                    banner {
-                        value {
-                            ...HeroBannerFragment
-                        }
-                    }
-                    rich_content {
-                        ...ContentBlocksParserFragment
-                    }
-                }
-            }
-        }
-    }
-`
-
-export default IndexPage
+export default IndexPage;
