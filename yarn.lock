@@ -5743,7 +5743,7 @@ gatsby-plugin-google-tagmanager-timeout@^2.2.5:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-plugin-image@^2.11.1:
+gatsby-plugin-image@^2.12.1:
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.12.1.tgz#302324125a1e018ff669772495f4b291bd00a832"
   integrity sha512-Azofblt5ZSk2NqCOrBI1WijcJw6dVHCKz85lz6J7qB3Fvy+YVjs/vbUODlXUwi3926Q5m7C2zdH0MQrk4T0DDQ==
@@ -5827,7 +5827,7 @@ gatsby-plugin-sass@^5.12.1:
     resolve-url-loader "^3.1.4"
     sass-loader "^10.1.1"
 
-gatsby-plugin-sharp@^4.11.1:
+gatsby-plugin-sharp@^4.12.1:
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.12.1.tgz#f97cb29074f4a07b469b9ddb1058a3574928d4eb"
   integrity sha512-P6noUl5LyASwYtCRSo1rjchk/ytfJvSFTLwzgXr1TiQHgZh06SUIqR8v3UqT90EDERNd1GeEBsQjRfWkrV2nbg==
@@ -5942,7 +5942,7 @@ gatsby-telemetry@^3.12.1:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-transformer-sharp@^4.11.0:
+gatsby-transformer-sharp@^4.12.1:
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.12.1.tgz#e26dc3540e97fc1c802518967c1e8d8a4ed96fae"
   integrity sha512-14AGG10Jf7ZBWxJDN2jSupAsBofoGU+p7+QJRzDrKdJrzp9v/yO/1xPB+r7UxtlW0l8cqPT6UyCITvJbWTDaww==
@@ -5964,7 +5964,7 @@ gatsby-worker@^1.12.1:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.11.2:
+gatsby@^4.12.1:
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.12.1.tgz#b9a72bca167662a05d7154e5e6091f31aa333efd"
   integrity sha512-/QteQShPAW1dRmG9wrjHmdfQEQxh6WfOi9jnJXAxljAx8UlRt0JFntxMc9gWGUJD6fXYKmf13Jan9izuNDQxNQ==
